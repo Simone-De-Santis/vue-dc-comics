@@ -58,7 +58,7 @@ export default {
 
 <style lang="scss" scoped>
 .Bg-blue {
-  background-color: #0282f9;
+  background-color: $blue-dc;
   height: 100px;
 }
 li {

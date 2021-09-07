@@ -54,7 +54,7 @@ nav {
 }
 .btn {
   margin: 20px 0;
-  border: 1px solid #0c70ce;
+  border: 1px solid $blue-dc;
   padding: 12px;
   #btn-footer {
     color: white;
@@ -70,7 +70,7 @@ nav {
   font-size: 1.6rem;
   margin-right: 30px;
   a {
-    color: #0c70ce;
+    color: $blue-dc;
   }
 }
 </style>>

@@ -51,9 +51,10 @@ body {
     max-width: 1300px;
   }
   .d-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include center("space") // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+;
   }
 
   li {
@@ -63,10 +64,11 @@ body {
       color: black;
       text-decoration: none;
       text-transform: uppercase;
+      &:hover,
+      &.active {
+        border-bottom: 2px solid $blue-dc;
+      }
     }
-  }
-  a:hover {
-    border-bottom: 2px solid #0c70ce;
   }
 }
 </style>
