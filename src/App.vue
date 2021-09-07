@@ -1,28 +1,72 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <NavBar />
+    </header>
+    <main>
+      <SectionContentMain />
+    </main>
+    <footer>
+      <SectionSpecialFooter />
+      <SectionListFooter />
+      <NavBarFooter />
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from "@/components/NavBar.vue";
+import SectionContentMain from "./components/SectionContentMain.vue";
+import SectionSpecialFooter from "./components/footer/SectionSpecialFooter.vue";
+import SectionListFooter from "./components/footer/SectionListFooter.vue";
+import NavBarFooter from "./components/footer/NavBarFooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    NavBar,
+    SectionContentMain,
+    SectionSpecialFooter,
+    SectionListFooter,
+    NavBarFooter,
+  },
+};
 </script>
 
-<style lang="scss">
+<style  lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+/*IN App*/
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  /*UTYLITY*/
+  .container {
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li {
+    list-style-type: none;
+    a {
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+  li:hover {
+    border-bottom: 2px solid #0c70ce;
+  }
 }
 </style>
