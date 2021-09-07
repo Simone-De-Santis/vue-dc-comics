@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div class="container d-flex">
+    <div class="container">
       <div class="btn">
         <ol>
           <li>
@@ -9,7 +9,7 @@
         </ol>
       </div>
       <div>
-        <ul class="d-flex">
+        <ul class="icon-footer">
           <li id="follow"><a href="#"> follow us</a></li>
           <li>
             <a href="#"
@@ -51,6 +51,12 @@ export default {
 <style lang="scss" scoped>
 nav {
   background-color: #303030;
+}
+.container {
+  @include center("space");
+}
+.icon-footer {
+  @include center();
 }
 .btn {
   margin: 20px 0;

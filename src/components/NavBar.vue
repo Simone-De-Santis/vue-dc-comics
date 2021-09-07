@@ -1,10 +1,10 @@
 <template>
-  <nav class="container d-flex">
+  <nav class="container">
     <div class="logoHeader">
       <img src="@/assets/img/dc-logo.png" alt="DClogo" />
     </div>
     <div class="listHeader">
-      <ul class="d-flex">
+      <ul>
         <li><a href="#">characteras </a></li>
         <li><a href="#">comics</a></li>
         <li><a href="#">movies</a></li>
@@ -32,7 +32,13 @@ export default {
     margin: 10px 0;
   }
 }
-.listHeader {
-  font-weight: bolder;
+.container {
+  @include center("space");
+  .listHeader {
+    font-weight: bolder;
+    ul {
+      @include center();
+    }
+  }
 }
 </style>

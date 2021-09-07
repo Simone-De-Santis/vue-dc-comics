@@ -50,13 +50,6 @@ body {
     margin: 0 auto;
     max-width: 1300px;
   }
-  .d-flex {
-    @include center("space") // display: flex;
-      // justify-content: space-between;
-      // align-items: center;
-;
-  }
-
   li {
     list-style-type: none;
     a {

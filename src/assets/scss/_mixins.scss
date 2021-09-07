@@ -7,6 +7,8 @@
     }@else if $type== 'space'{
         justify-content: space-between;
         align-items: center;
+    }@else if $type=='start-n-center'{
+        align-items: flex-start;
     }@else{
     align-items: center;
     justify-content: center;

@@ -1,8 +1,8 @@
 <template>
   <section class="Bg-blue">
-    <ol class="d-flex container">
+    <ol class="container">
       <li>
-        <a class="d-flex" href="#">
+        <a class="" href="#">
           <img
             src="@/assets/img/buy-comics-digital-comics.png"
             alt="buy-comics-digital-comics.png"
@@ -11,7 +11,7 @@
         </a>
       </li>
       <li>
-        <a class="d-flex" href="#"
+        <a class="" href="#"
           ><img
             src="@/assets/img/buy-comics-merchandise.png"
             alt="merchandise"
@@ -20,7 +20,7 @@
         </a>
       </li>
       <li>
-        <a class="d-flex" href="#"
+        <a class="" href="#"
           ><img
             src="@/assets/img/buy-comics-subscriptions.png"
             alt="buy-comics-subscriptions.png"
@@ -29,7 +29,7 @@
         </a>
       </li>
       <li>
-        <a class="d-flex" href="#"
+        <a class="" href="#"
           ><img
             src="@/assets/img/buy-comics-shop-locator.png"
             alt="buy-comics-subscriptions.png"
@@ -38,7 +38,7 @@
         </a>
       </li>
       <li>
-        <a class="d-flex" href="#"
+        <a class="" href="#"
           ><img
             src="@/assets/img/buy-dc-power-visa.svg"
             alt="buy-dc-power-visa.svg"
@@ -61,15 +61,19 @@ export default {
   background-color: $blue-dc;
   height: 100px;
 }
-li {
-  padding: 10px;
-  a {
-    img {
-      height: 40px;
-    }
-    p {
-      color: white;
-      margin: 20px;
+ol {
+  @include center("space");
+  li {
+    padding: 10px;
+    a {
+      @include center();
+      img {
+        height: 40px;
+      }
+      p {
+        color: white;
+        margin: 20px;
+      }
     }
   }
 }

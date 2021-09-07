@@ -1,6 +1,6 @@
 <template>
   <div id="footerListMain">
-    <div class="container d-flex">
+    <div class="container">
       <ol>
         <li><a href="#" class="title-list"> dc comics</a></li>
         <li><a href="#">characters</a></li>
@@ -62,7 +62,7 @@ export default {
     background-image: url("../../assets/img/dc-logo-bg.png");
     background-repeat: no-repeat;
     background-position: right;
-
+    @include center("start-n-center");
     ol {
       margin-right: 20px;
       .title-list {
@@ -82,11 +82,6 @@ export default {
     text-transform: capitalize;
     padding: 0;
     line-height: 1.5em;
-  }
-  .d-flex {
-    align-items: flex-start;
-    justify-content: normal;
-    padding: 20px 0;
   }
 }
 </style> 
