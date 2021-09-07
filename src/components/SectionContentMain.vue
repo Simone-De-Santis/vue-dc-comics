@@ -12,7 +12,7 @@ export default {
 
 <style lang="scss" >
 main {
-  min-height: 150px;
+  min-height: 100px;
   background-color: black;
   color: white;
 }

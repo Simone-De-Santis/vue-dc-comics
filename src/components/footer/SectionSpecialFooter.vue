@@ -59,7 +59,7 @@ export default {
 <style lang="scss" scoped>
 .Bg-blue {
   background-color: #0282f9;
-  // height: 180px;
+  height: 100px;
 }
 li {
   padding: 10px;
