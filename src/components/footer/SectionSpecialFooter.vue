@@ -59,18 +59,17 @@ export default {
 <style lang="scss" scoped>
 .Bg-blue {
   background-color: #0282f9;
-  max-height: 120px;
+  // height: 180px;
 }
 li {
-  padding: 20px;
+  padding: 10px;
   a {
     img {
-      height: 50px;
+      height: 40px;
     }
     p {
       color: white;
       margin: 20px;
-      // white-space: nowrap;
     }
   }
 }

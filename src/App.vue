@@ -65,7 +65,7 @@ body {
       text-transform: uppercase;
     }
   }
-  li:hover {
+  a:hover {
     border-bottom: 2px solid #0c70ce;
   }
 }
