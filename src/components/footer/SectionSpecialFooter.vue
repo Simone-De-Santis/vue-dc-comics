@@ -63,6 +63,7 @@ export default {
 }
 ol {
   @include center("space");
+  @include modlist("none");
   li {
     padding: 10px;
     a {

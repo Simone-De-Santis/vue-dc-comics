@@ -2,11 +2,11 @@
   <nav>
     <div class="container">
       <div class="btn">
-        <ol>
+        <ul>
           <li>
             <a href="#" id="btn-footer">sign-up now!</a>
           </li>
-        </ol>
+        </ul>
       </div>
       <div>
         <ul class="icon-footer">

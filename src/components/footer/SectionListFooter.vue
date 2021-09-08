@@ -1,7 +1,7 @@
 <template>
   <div id="footerListMain">
     <div class="container">
-      <ol>
+      <ul>
         <li><a href="#" class="title-list"> dc comics</a></li>
         <li><a href="#">characters</a></li>
         <li><a href="#">comics</a></li>
@@ -11,14 +11,14 @@
         <li><a href="#">videos</a></li>
         <li><a href="#">news</a></li>
 
-        <ol class="second-title-list">
+        <ul class="second-title-list">
           <li><a href="#" class="title-list"> shop</a></li>
           <li><a href="#">shop DC</a></li>
           <li><a href="#">shop DC collectibles</a></li>
-        </ol>
-      </ol>
+        </ul>
+      </ul>
 
-      <ol>
+      <ul>
         <li><a href="#" class="title-list"> dc</a></li>
         <li><a href="#">terms of use</a></li>
         <li><a href="#">privacy pokicy(new)</a></li>
@@ -32,15 +32,15 @@
         <li><a href="#">shop help</a></li>
         <li><a href="#">contact us</a></li>
         <li><a href="#">jobs</a></li>
-      </ol>
-      <ol>
+      </ul>
+      <ul>
         <li><a href="#" class="title-list">sites</a></li>
         <li><a href="#">DC</a></li>
         <li><a href="#">MAD magazine</a></li>
         <li><a href="#">DC kids</a></li>
         <li><a href="#">DC universe</a></li>
         <li><a href="#">DC power visa</a></li>
-      </ol>
+      </ul>
     </div>
   </div>
 </template>
@@ -63,7 +63,7 @@ export default {
     background-repeat: no-repeat;
     background-position: right;
     @include center("start-n-center");
-    ol {
+    ul {
       margin-right: 20px;
       .title-list {
         font-size: 1.2em;

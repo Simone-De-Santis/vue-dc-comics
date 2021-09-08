@@ -5,10 +5,16 @@
       <div>current series</div>
       <section class="section-comics">
         <div v-for="(comic, index) in comics" :key="index" class="card">
-          <section class="container-img">
-            <img :src="comic.thumb" alt="" />
-          </section>
-          <figcaption class="text-img">{{ comic.series }}</figcaption>
+          <ol>
+            <li>
+              <a href="#">
+                <section class="container-img">
+                  <img :src="comic.thumb" alt="" class="my-up-image" />
+                </section>
+                <figcaption class="text-img">{{ comic.series }}</figcaption>
+              </a>
+            </li>
+          </ol>
         </div>
       </section>
       <div>load more</div>
@@ -121,18 +127,22 @@ main {
   color: white;
 }
 .section-comics {
-  @include center();
-  flex-wrap: wrap;
+  @include flex("wrap");
+  padding: 25px;
   .card {
     padding: 5px;
     width: calc(100% / 6);
-    height: 250px;
+    ol {
+      @include modlist("none");
+    }
     .container-img {
       overflow: hidden;
       height: 190px;
     }
     .text-img {
-      padding-top: 20px;
+      font-size: 0.9em;
+      color: white;
+      padding-top: 10px;
     }
   }
 }

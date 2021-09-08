@@ -43,8 +43,6 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
   font-family: "PT Sans Narrow", sans-serif;
 }
 
@@ -55,18 +53,14 @@ body {
     margin: 0 auto;
     max-width: 1300px;
   }
-  li {
-    list-style-type: none;
-    a {
-      padding: 10px;
-      color: black;
-      text-decoration: none;
-      text-transform: uppercase;
-      &:hover,
-      &.active {
-        border-bottom: 2px solid $blue-dc;
-      }
-    }
+  header {
+    @include fixed-top("");
+  }
+  main {
+    margin-top: 80px;
+  }
+  ul {
+    @include modlist();
   }
 }
 </style>

@@ -80,12 +80,16 @@ export default {
 <style lang="scss" scoped>
 .logoHeader {
   img {
-    height: 80px;
+    height: 70px;
     margin: 10px 0;
   }
 }
 .container {
   @include center("space");
+  position: relative;
+  width: 100%;
+  height: 80px;
+
   .listHeader {
     font-weight: bolder;
     ul {
@@ -94,3 +98,7 @@ export default {
   }
 }
 </style>
+
+
+
+
