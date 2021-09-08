@@ -30,6 +30,11 @@ export default {
     SectionListFooter,
     NavBarFooter,
   },
+  data() {
+    return {};
+  },
+  props() {},
+  methods() {},
 };
 </script>
 

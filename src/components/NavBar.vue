@@ -5,16 +5,11 @@
     </div>
     <div class="listHeader">
       <ul>
-        <li><a href="#">characteras </a></li>
-        <li><a href="#">comics</a></li>
-        <li><a href="#">movies</a></li>
-        <li><a href="#">tv</a></li>
-        <li><a href="#">game</a></li>
-        <li><a href="#">collectibles</a></li>
-        <li><a href="#">videos</a></li>
-        <li><a href="#">fans</a></li>
-        <li><a href="#">news</a></li>
-        <li><a href="#">shop</a></li>
+        <li v-for="(link, index) in links" :key="index">
+          <a :href="link.url" :class="{ active: link.current }">{{
+            link.text
+          }}</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -23,6 +18,63 @@
 <script>
 export default {
   name: "NavBar",
+  data() {
+    return {
+      links: [
+        {
+          text: "Characters",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Comics",
+          url: "#",
+          current: true,
+        },
+        {
+          text: "Movies",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "TV",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Games",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Collectibles",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Videos",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Fans",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "News",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Shop",
+          url: "#",
+          current: false,
+        },
+      ],
+    };
+  },
+  methods() {},
 };
 </script>
 <style lang="scss" scoped>
