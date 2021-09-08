@@ -1,8 +1,9 @@
 <template>
   <main>
-    <section>immage jumbo</section>
     <div class="container">
-      <div>current series</div>
+      <div class="section-btn-current">
+        <a class="btn" href="#">current series</a>
+      </div>
       <section class="section-comics">
         <div v-for="(comic, index) in comics" :key="index" class="card">
           <ol>
@@ -18,7 +19,7 @@
         </div>
       </section>
       <div class="section-btn-load">
-        <a class="btn-load">load more</a>
+        <a class="btn" href="#">load more</a>
       </div>
     </div>
   </main>
@@ -117,8 +118,8 @@ export default {
       ],
     };
   },
-  props() {},
-  methods() {},
+  // props() {},
+  // methods() {},
 };
 </script>
 
@@ -151,12 +152,22 @@ main {
 .section-btn-load {
   @include center();
   padding-bottom: 20px;
-  .btn-load {
-    text-transform: uppercase;
-    background-color: $blue-dc;
-    padding: 10px 30px;
-    font-size: 0.8rem;
-    font-weight: bold;
+}
+.btn {
+  text-transform: uppercase;
+  background-color: $blue-dc;
+  padding: 10px 30px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.section-btn-current {
+  position: relative;
+  bottom: 5px;
+
+  .btn {
+    font-size: 1.6rem;
   }
 }
 </style>

@@ -4,6 +4,7 @@
       <NavBar />
     </header>
     <main>
+      <Jumbo />
       <SectionContentMain />
     </main>
     <footer>
@@ -15,17 +16,18 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
-import SectionContentMain from "./components/SectionContentMain.vue";
+import NavBar from "./components/NavBar.vue";
+import SectionContentMain from "./components/main/SectionContentMain.vue";
+import Jumbo from "./components/main/Jumbo.vue";
 import SectionSpecialFooter from "./components/footer/SectionSpecialFooter.vue";
 import SectionListFooter from "./components/footer/SectionListFooter.vue";
 import NavBarFooter from "./components/footer/NavBarFooter.vue";
-
 export default {
   name: "App",
   components: {
     NavBar,
     SectionContentMain,
+    Jumbo,
     SectionSpecialFooter,
     SectionListFooter,
     NavBarFooter,
@@ -56,9 +58,7 @@ export default {
   header {
     @include fixed-top("");
   }
-  main {
-    margin-top: 80px;
-  }
+
   ul {
     @include modlist();
   }
