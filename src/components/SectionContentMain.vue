@@ -17,7 +17,9 @@
           </ol>
         </div>
       </section>
-      <div>load more</div>
+      <div class="section-btn-load">
+        <a class="btn-load">load more</a>
+      </div>
     </div>
   </main>
 </template>
@@ -144,6 +146,17 @@ main {
       color: white;
       padding-top: 10px;
     }
+  }
+}
+.section-btn-load {
+  @include center();
+  padding-bottom: 20px;
+  .btn-load {
+    text-transform: uppercase;
+    background-color: $blue-dc;
+    padding: 10px 30px;
+    font-size: 0.8rem;
+    font-weight: bold;
   }
 }
 </style>
